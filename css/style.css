@@ -15,17 +15,21 @@ elementi in float!
     padding: 0;
 }
 
-
+body{
+    font-family: 'Roboto', sans-serif;
+}
 header{
     background-image: url(../img/jumbo.png);
     background-size: cover;
     height: 500px;
+
+    min-width: 1200px;
 }
 
 /* NAVIGATION BAR */
 nav{
     display: inline-block;
-    margin: 0 auto;
+    margin: 0 6%;
 } 
 
 
@@ -38,8 +42,20 @@ nav> li> a{
     /* Style and Shape */
     color: white;
     text-decoration: none;
-    background-color: #00000082;
 } 
+
+/* BUTTON Settings */
+input[type="button"]{
+    padding: 8px 18px;
+    border-radius:  15px;
+    background-color: white;
+    font-weight: bold;
+    cursor: pointer;
+    border: none;
+}
+
+
+
 
 img#logo_image{
     vertical-align: middle; 
@@ -47,11 +63,18 @@ img#logo_image{
  
 
 
-
-/* div#top_bar{
+div#top_bar{
     padding-top: 20px;
-    display: inline-block;
-    width: 80%;
+    display: block;
+    width: 900px;
     margin: 0 auto;
-} */
+}
 
+
+/* HEADER CONTENT */
+div#header_content{
+    text-align: center;
+    width: 600px;
+    margin: 0 auto;
+    margin-top: 100px;
+}
