@@ -45,10 +45,6 @@ h1{
 }
 
 
-
-
-
-
 section{
     /* SECTION General Settings */
     min-width: 1200px;
@@ -92,15 +88,17 @@ input[type="button"]{
     border: none;
 }
 
-/*  General Settings for the BUTTONS in the HEADER CONTENT */
-div#header_content>input[type="button"]{
+/*  General Settings for the BUTTONS in the HEADER CONTENT
+and SECTION CONTENT */
+div#header_content>input[type="button"],
+section#special_section input[type="button"]
+{
     font-size: 1.2em;
     height: 50px;
     padding: 15px;
     border-radius: 30px;
 }
 
- 
 
 div#top_bar{
     padding-top: 20px;
@@ -136,7 +134,7 @@ input#sign_in{
 }
 
 
-input#download{
+input.download{
     background-color: white;
     margin-right: 20px;
 }
@@ -150,3 +148,26 @@ input#open_with_discord{
 main>section:nth-child(even){
     background-color: #d7dede;
 }
+
+section#special_section{
+    height: 1200px;
+}
+
+#special_section div.section_content{
+    width: 850px;
+}
+
+#special_section {
+    text-align: center;
+}
+#special_section>div.content_wrapper{
+    width: 880px;
+}
+
+#special_section input[type="button"]{
+    margin-top: 20px;
+    background-color: #4b5bb9;
+    color: white;
+}
+
+
