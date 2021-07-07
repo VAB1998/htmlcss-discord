@@ -150,7 +150,7 @@ main>section:nth-child(even){
 }
 
 section#special_section{
-    height: 1200px;
+    height: 1000px;
 }
 
 #special_section div.section_content{
@@ -168,6 +168,13 @@ section#special_section{
     margin-top: 20px;
     background-color: #4b5bb9;
     color: white;
+}
+
+div.stars_bg{
+    height: 70px;
+    
+    background-image: url(../img/stars.svg);
+    background-size: contain;
 }
 
 
