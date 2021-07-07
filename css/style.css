@@ -15,9 +15,10 @@ header{
     height: 600px;
     
     min-width: 1200px;
-
+    /* Header main text color */
     color: white;
 }
+
 
 /* NAVIGATION BAR */
 nav{
@@ -38,28 +39,60 @@ nav> li> a{
 } 
 
 
+/* HEADER Title */
 h1{
     font-size: 3em;
 }
 
+
+
+
+
+
 section{
+    /* SECTION General Settings */
     min-width: 1200px;
     height: 600px;
-    background-color: teal;
-    
 
     position: relative;
-
 }
 
-/* BUTTONS General Settings */
+div.section_content{
+    display: inline-block;
+    width: 400px;
+}
+
+
+section div.section_content>h1{
+    padding-top: 30px;
+}
+
+
+div.content_wrapper{
+    width: 1200px;
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/* General Settings for IMAGES */
+img.vertical_align{
+    vertical-align: top;
+}
+
+p.line_height{
+    line-height: 30px;
+}
+
+/*  General Settings for ALL the BUTTONS */
 input[type="button"]{
-    /* border-radius:  15px; */
-    /* font-weight: bold; */
     cursor: pointer;
     border: none;
 }
 
+/*  General Settings for the BUTTONS in the HEADER CONTENT */
 div#header_content>input[type="button"]{
     font-size: 1.2em;
     height: 50px;
@@ -67,26 +100,7 @@ div#header_content>input[type="button"]{
     border-radius: 30px;
 }
 
-/* SECTIONS */
-
-div.section_content{
-    display: inline-block;
-    width: 300px;
-}
-
-
-section div.section_content>h1{
-    padding-top: 40px;
-}
-
-div.secti
-
-
-img.vertical_align{
-    vertical-align: top;
-}
  
-
 
 div#top_bar{
     padding-top: 20px;
@@ -100,7 +114,7 @@ div#top_bar{
 div#header_content>p{
     margin-top: 30px;
     margin-bottom: 15px;
-    line-height: 30px;
+    /* line-height: 30px; */
 }
 
 
@@ -122,7 +136,6 @@ input#sign_in{
 }
 
 
-
 input#download{
     background-color: white;
     margin-right: 20px;
@@ -133,3 +146,7 @@ input#open_with_discord{
     color: white;
 }
 
+/* All the even SECTIONS:  */
+main>section:nth-child(even){
+    background-color: #d7dede;
+}
