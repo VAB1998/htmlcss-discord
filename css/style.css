@@ -13,7 +13,6 @@ header{
     background-image: url(../img/jumbo.png);
     background-size: cover;
     height: 600px;
-    
     min-width: 1200px;
     /* Header main text color */
     color: white;
@@ -44,43 +43,49 @@ h1{
     font-size: 3em;
 }
 
-
+/* SECTION General Settings */
 section{
-    /* SECTION General Settings */
-    min-width: 1200px;
     height: 600px;
-
-    position: relative;
 }
 
+/* SECTION CONTENT */
 div.section_content{
     display: inline-block;
-    width: 400px;
+    width: 38%;
+}
+
+.responsiveness{
+    /* Responsive */
+    /* Se il box ha TROPPO SPAZIO raggiunge una LARGHEZZA MASSIMA FISSA(in modo tale che 
+    il TESTO  NON si DISPERDA */
+    /* Se il box ha POCO SPAZIO  raggiunge una LARGHEZZA MINIMA FISSA */
+    width: 100%;
+    margin: 0 auto;
+    min-width: 1050px;
+    max-width: 1200px;
 }
 
 
+/* SECTION CONTENT> h1 */
 section div.section_content>h1{
     padding-top: 30px;
 }
-
-
-div.content_wrapper{
-    width: 1200px;
-
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+/* SECTION CONTENT> p */
+section div.section_content>p{
+    line-height: 35px;
 }
 
-/* General Settings for IMAGES */
+/* SECTION CONTENT < img */
+div.content_wrapper>img{
+    width:60%;
+}
+
+/* General Settings for IMG */
 img.vertical_align{
     vertical-align: top;
 }
 
-p.line_height{
-    line-height: 30px;
-}
+
 
 /*  General Settings for ALL the BUTTONS */
 input[type="button"]{
@@ -99,30 +104,25 @@ section#special_section input[type="button"]
     border-radius: 30px;
 }
 
-
+/* TOP BAR */
 div#top_bar{
     padding-top: 20px;
     display: block;
-    width: 900px;
-    margin: 0 auto;
 }
 
 
 /* HEADER CONTENT */
-div#header_content>p{
-    margin-top: 30px;
-    margin-bottom: 15px;
-    /* line-height: 30px; */
-}
-
-
-
-
 div#header_content{
     text-align: center;
     width: 600px;
     margin: 0 auto;
     margin-top: 100px;
+}
+
+div#header_content>p{
+    margin-top: 30px;
+    margin-bottom: 15px;
+    /* line-height: 30px; */
 }
 
 
@@ -149,21 +149,25 @@ main>section:nth-child(even){
     background-color: #d7dede;
 }
 
+/* SPECIAL SECTION. Different height */
 section#special_section{
     height: 1000px;
 }
 
+/* SPECIAL SECTION> SECTION CONTENT: Different display */
 #special_section div.section_content{
-    width: 850px;
+    width: 100%;
+    display: block;
 }
 
 #special_section {
     text-align: center;
 }
-#special_section>div.content_wrapper{
-    width: 880px;
-}
 
+/* #special_section>div.content_wrapper{
+    width: 880px;
+} */
+/* SPECIAL SECTION> BUTTON */
 #special_section input[type="button"]{
     margin-top: 20px;
     background-color: #4b5bb9;
@@ -172,7 +176,6 @@ section#special_section{
 
 div.stars_bg{
     height: 70px;
-    
     background-image: url(../img/stars.svg);
     background-size: contain;
 }
