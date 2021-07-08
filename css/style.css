@@ -47,6 +47,7 @@ h1{
 section{
     height: 700px;
     padding: 70px 0;
+    
 }
 
 /* SECTION CONTENT */
@@ -76,7 +77,7 @@ section div.section_content>p{
     line-height: 35px;
 }
 
-/* SECTION CONTENT < img */
+/* SECTION CONTENT > img */
 div.content_wrapper>img{
     width:60%;
 }
